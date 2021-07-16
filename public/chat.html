@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+    <title>chat With Ak-47</title>
+</head>
+<body>
+    <section>
+        <header>
+            <div class="container contain">
+                <div class="leftroom">
+                    <button class="leave" id="leave-btn">Leave Room</button>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 contain">
+                    <div class="table">
+                        <h2>Chat With Ak-47</h2>
+                        <div class="roomName">
+                            <div id="room-name" class="">Room name</div>
+                        </div>
+                        <div class="nameuser">
+                            <h4>Users in a room </h4>
+                            <div id="users"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 contain">
+                    <div class="chat-messages" style="overflow: scroll;">
+                        <ul id="messages"></ul>
+                    </div>
+                    <div class="bottom-form">
+                        <form class="sendmsg contain" id="chat-form">
+                            <input type="text" placeholder="Write message....." class="mgsinput"  id="input" autocomplete="false">
+                            <button type="submit" class="send">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js" integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./js/main.js"></script>
+</html>
